@@ -1,0 +1,394 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% block title %} {% endblock %}
+      <section class="internal-sec my-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="sidenav">
+                <div class="left-slider">
+                  <ul>
+                    <li><a href="#" class="element-style">Home</a></li>
+                    <li class="element-style text-uppercase list-head">Public</li>
+                    <li>
+                    	<a href="" class="element-style active"><i class="fas fa-globe mr-2"></i>Questions</a>
+                    </li>
+                    <ul class="">
+                      <li><a href="" class="element-style pl-4">Tags</a></li>
+                      <li><a href="" class="element-style pl-4">Users</a></li>
+                    </ul>
+                    <li class="element-style d-flex justify-content-between align-items-center text-uppercase list-head">
+                    	Collectives
+                    	<a href="#" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fas fa-info info_btn"></i></a>
+                    </li>
+                    <li>
+                    	<a href="" class="element-style"><i class="fas fa-star mr-2"></i>Explore Collectives</a>
+                    </li>
+                    <li class="element-style text-uppercase list-head">Find in job</li>
+                    <li class="">
+                        <ul class="">
+                          <li><a href="" class="element-style pl-4">Jobs</a></li>
+                          <li><a href="" class="element-style pl-4">Companies</a></li>
+                        </ul> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="ques d-md-flex justify-content-between align-items-center">
+                    <div class="que-text me-auto mb-md-0 mb-2"><h2><a href="#" class="text-dark" id="question">No Question Found</a></h2></div>
+                    <a href="{% url 'question:ask-question' %}">
+                    <button type="button" class="btn btn-primary custm-primary">Ask Question</button>
+                    </a>
+                  </div>
+                  <div class="ask-det mt-2">
+                    <p>Asked 11 years, 9 months ago Active 5 days ago Viewed 1.9m times</p>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+              <div class="">
+                <div class="col-md-12">
+                  <div class="post-layout d-flex">
+                    <div class="col-1">
+                      <div class="votecell text-center">
+                        <ul>
+                          <li class="vote-cell-li mb-3"><a href="#" class="ligrayicon" id="upvote"><i class="fas fa-arrow-up"></i></a></li>
+                          <li class="vote-cell-li"><a href="#" class="ligrayicon-txt" ></a></li>
+                          <div id="qvotecount"></div>
+                          <li class="vote-cell-li mt-3"><a href="#" class="ligrayicon" id="downvote"><i class="fas fa-arrow-down"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-11">
+                      <div class="postcell ms-2">
+                        <div id="details">
+                            
+                        </div>
+                          <div class="post-details mt-4">
+                            <div class="post-taglist">
+                              <a href="#" class="questin-tag d-inline-block">html</a>
+                              <a href="#" class="questin-tag d-inline-block">css</a>
+                              <a href="#"class="questin-tag d-inline-block">combobox</a>
+                              <a href="#" class="questin-tag d-inline-block">cross-browser</a>
+                              <a href="#" class="questin-tag d-inline-block">skinning</a>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="comment">
+                          <ul class="ul-comment">
+                            <li class="d-flex">
+                              <div class="js-comment me-3"><b class="mr-2 no-count">58</b ></div>
+                              <div class="comment-text">
+                                I feel it's a legitimate question, but the answer is "no, not really" or "not the way you want it". 
+                                But no one (neither me) is 100% sure about it, this feeling of ambiguity crawls underneath reader's
+                                 skin and the legitimacy of the question gets questioned. – <a href="#"><span class="author-name">ZJR</span> <span class="date-text">Dec 13 '09 at 3:56</span></a>
+                              </div>
+                            </li>
+                            <hr>
+                            <li class="d-flex">
+                              <div class="number me-3"><b class="mr-2 no-count">1</b></div>
+                              <div class="comment-text">
+                                I feel it's a legitimate question, but the answer is "no, not really" or "not the way you want it". 
+                                But no one (neither me) is 100% sure about it, this feeling of ambiguity crawls underneath reader's
+                                 skin and the legitimacy of the question gets questioned. – <a href="#"><span class="author-name">ZJR</span> <span class="date-text">Dec 13 '09 at 3:56</span></a>
+                              </div>
+                            </li>
+                            <hr>
+                            <li class="d-flex">
+                              <div class="number me-3"><b class="mr-2 no-count">1</b></div>
+                              <div class="comment-text">
+                                @Jitendra Thanks for updating your question. The best you can reliably do with the constraints you have (CSS only and 
+                                no JS) is modify the typeface (font), background and foreground (text) colors, border size, appearance and colors, placement, 
+                                and size (usually via the type setting through font). Even then, you'll probably need to do a few tweaks to make sure things 
+                                look the same across all browsers. I wish I knew of a better answer than that, and perhaps there is one that I've missed, but
+                                 i don't think so. – <a href="#"><span class="author-name">jeremyosborne</span> <span class="date-text">Dec 13 '09 at 3:56</span></a>
+                              </div>
+                            </li>
+                            <hr>
+                            <li class="d-flex">
+                              <div class="number me-3"><b class="mr-2 no-count">1</b></div>
+                              <div class="comment-text">
+                                I feel it's a legitimate question, but the answer is "no, not really" or "not the way you want it". 
+                                But no one (neither me) is 100% sure about it, this feeling of ambiguity crawls underneath reader's
+                                 skin and the legitimacy of the question gets questioned. – <a href="#"><span class="author-name">ZJR</span> <span class="date-text">Dec 13 '09 at 3:56</span></a>
+                              </div>
+                            </li>
+                            <div class="number mt-3"><span class="">Your Answer</span></div>
+                            <li class="d-flex">
+                              <div class="comment-text">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="answers-header mx-3 px-4">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="dies d-md-flex mb-md-3 justify-content-between align-items-center">
+                          <div class="left-txt" id="total_answer"></div>
+                        <div class="right-text ms-auto">
+                          <div class="ask-ques ">
+                            <div class="inter mt-md-4 mt-2">
+                              <div class="inter-details d-md-flex">
+                                <a href="#" class="inter-botm-details d-inline-block mb-2">interseting</a>
+                                <a href="#" class="inter-botm-details d-inline-block mb-2">318 Bountied</a>
+                                <a href="#"class="inter-botm-details d-inline-block mb-2">Hot</a>
+                                <a href="#" class="inter-botm-details d-inline-block mb-2">Week</a>
+                                <a href="#" class="inter-botm-details d-inline-block mb-2">Mounth</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                     
+                      <div class="col-md-11">
+                        <div class="answercell" id="answercell">
+                          <p class="my-3">Here are three solutions:</p>
+                          <p class="my-3">Solution #1 - appearance: none - with Internet Explorer 10 - 11 workaround (Demo)</p>
+                          <p class="my-3">To hide the default arrow set <span class="appear">appearance: none</span> on the select element, 
+                            then add your own custom arrow with <span  class="appear">background-image</span></p>
+                          <p class="lang-html">
+                            select {
+                              -webkit-appearance: none;
+                              -moz-appearance: none;
+                              appearance: none;       /* Remove default arrow */
+                              background-image: url(...);   /* Add custom arrow */ }                         
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="answer-collection mx-3">
+                  </div>
+                  
+                 
+                </div>
+                <div class="">
+                  <hr>
+                  <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
+                    <div class="text-left mt-4">
+                      <input type="submit" id="submit_btn" value="Post Your Answer">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+
+
+
+
+  <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+  <script type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+      CKEDITOR.replace( 'answer' );
+      console.log(localStorage.getItem('token'),"**************");
+      token = localStorage.getItem('token')
+
+      if (token){
+     }
+     else {
+      window.location.replace('/sign_in');
+     }
+
+  
+    const abpath=window.location.pathname.split('/');
+    const question_id=abpath[2];
+    console.log(question_id)
+    axios.get(`/api/question/upvote/${question_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+      $('#qvotecount').html(resp.data.count)
+});
+  upvotepost = ""
+$('#upvote').click(function(){
+  axios.post(`/api/question/upvote/${question_id}`,upvotepost,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+      window.location.reload()
+});
+});
+
+$('#downvote').click(function(){
+  axios.post(`/api/question/downvote/${question_id}`,upvotepost,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+      window.location.reload()
+});
+});
+
+
+      axios.get(`/api/question/get/${question_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+        const question_data = resp.data.question;
+        const answer_data = resp.data.answers;
+        console.log(answer_data);
+        console.log(resp.data);
+  $('#question').empty();
+  $('#question').html(question_data.title);
+  $('#details').empty();
+  $('#details').html(question_data.details)
+  $('#answercell').empty();
+  $('#total_answer').html(+resp.data.total_ans+" Answer");
+
+  console.log(resp.data.total_ans)
+
+
+  ans_template=''
+  answer_data.map(function(item){
+    ans_template+=`<div class="post-layout d-flex mt-5">
+                    <div class="col-1">
+                      <div class="votecell text-center">
+                        <ul>
+                          <li class="vote-cell-li mb-3 answer_upvote" answer_id = ${item.id}><a href="javascript:void(0);" class="ligrayicon"><i class="fas fa-arrow-up"></i></a></li>
+
+                          <li class="vote-cell-li"><a href="#" answer_id = ${item.id} class="ligrayicon-txt" id="answer_count">${item.votes}</a></li>
+
+                          <li class="vote-cell-li mt-3 answer_downvote" answer_id = ${item.id}><a href="javascript:void(0);"  class="ligrayicon "><i class="fas fa-arrow-down"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-11">
+                      ${item.text}
+                        <hr>
+                        <div class="postby">
+                          <div class="postimg d-flex">
+                            <img src="{% static 'images/handsome.jpg' %}" width="" class="post-image mr-2" alt="">
+                            <p class="post-phara m-0">Posted by<span class="post-name mx-1">${item.user}</span></p><span class="post-time">02hr ago</span></div>
+                            <div class="post-comment"><i class="far fa-comment-alt"></i> 05+</div>
+                        </div>
+                    </div>
+                  </div>`
+                    return ans_template
+  })
+
+  $('.answer-collection').html(ans_template);
+
+  
+  $('.answer_upvote').click(function(){
+    const answer_id = $(this).attr('answer_id');
+
+    var upvoteEle = $(this);
+   
+    axios.post(`/api/answer/upvote/${answer_id}`,upvotepost,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+      // window.location.reload();
+      console.log(resp.data)
+      upvoteEle.next("li").html(`<a href="#" class="ligrayicon-txt" id="answer_count">${resp.data.count}</a>`);
+
+    });
+  });
+  $('.answer_downvote').click(function(){
+    // console.log("***************")
+    const answer_data = $(this).attr('answer_id');
+    console.log(answer_data,"**********");
+    var downvoteEle = $(this);
+
+     axios.post(`/api/answer/downvote/${answer_data}`,upvotepost,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+       console.log(resp.data)
+      downvoteEle.prev("li").html(`<a href="#" class="ligrayicon-txt" id="answer_count">${resp.data.count}</a>`);
+
+    });
+
+  });
+   
+  });
+
+  
+//   const answer_id = $(this).attr('answer_id');
+//   axios.get(`/api/answer/upvote/${answer_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+//     console.log(resp.data.count,"****************-------")
+//       // $('#qvotecount').html(resp.data.count)
+// });
+
+  
+    function getCookie(name) {
+                  var cookieValue = null;
+                  if (document.cookie && document.cookie != '') {
+                      var cookies = document.cookie.split(';');
+                      for (var i = 0; i < cookies.length; i++) {
+                          var cookie = cookies[i].trim();
+                          // Does this cookie string begin with the name we want?
+                          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                              break;
+                          }
+                      }
+                  }
+                  return cookieValue;
+                }
+    
+    $('#submit_btn').click(function(){
+
+
+        
+      var data = CKEDITOR.instances["answer"].getData();
+        const answerdetail = {
+          text:data,
+          question:question_id
+        }
+        console.log(answerdetail);
+        console.log(localStorage.getItem("token"))
+        const csrftoken = getCookie('csrftoken');
+        console.log(csrftoken)
+        const headers = {
+                          'Content-Type': 'application/json',
+                          'X-CSRFToken': csrftoken,
+                          'Authorization': localStorage.getItem('token')
+    
+                        }
+          
+      
+        axios
+        .post("/api/answer/", answerdetail,{
+          headers: headers
+        })
+        .then((res) => {
+      
+    
+          // const response_role = res.data['role'];
+      
+          // if(response_role=="Admin"){
+          //   window.location.replace('/dashboard/admin');
+          // }else if(response_role=="sen_manager"){
+          //   window.location.replace('/dashboard/sen_manager');
+          // }else if(response_role=="manager"){
+          //   window.location.replace('/dashboard/manager');
+          location.reload();
+          console.log("Post successful!"); 
+        })
+        .catch(() => {
+        //   $('#popup_msg').show();
+          console.log("Oops, request failed!")
+        }) 
+      
+        });
+
+
+  </script>
+
+
+
+
+
+{% endblock %}
+

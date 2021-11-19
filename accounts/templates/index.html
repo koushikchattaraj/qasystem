@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <head>
+    {% block title %} {% endblock %}
+  </head>
+
+    
+   <section class="banner">
+      <div id="carouselExampleDark" class="carousel carousel-dark carousel-white slide" data-bs-ride="carousel">
+        <div class="carousel-indicators carousel-cus-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item cs-overlay active" data-bs-interval="10000">
+            <img src="{% static 'images/banner1.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption cus-caption d-md-block">
+              <section class="hero">
+                <div class="hero-text">
+                  
+                  <h2 class="animat-head">Text Typing Animation.</h2>
+                </div>
+                <p class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!</p>
+              </section>
+            </div>
+          </div>
+          <div class="carousel-item cs-overlay" data-bs-interval="2000">
+            <img src="{% static 'images/banner2.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption cus-caption d-md-block">
+              <section class="hero">
+                <div class="hero-text">
+                  <h2 class="animat-head">Text Typing Animation.</h2>
+                </div>
+                <p class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!</p>
+              </section>
+            </div>
+          </div>
+          <div class="carousel-item cs-overlay">
+            <img src="{% static 'images/banner3.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption cus-caption d-md-block">
+              <section class="hero">
+                <div class="hero-text">
+                  <h2 class="animat-head">Text Typing Animation.</h2>
+                </div>
+                <p class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="container position-relative">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carouselcontrolprev-icon" aria-hidden="true"><i class="fas fa-chevron-left cus-fa"></i></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carouselcontrolnext-icon" aria-hidden="true"><i class="fas fa-chevron-right cus-fa"></i></span>
+            <span class="visually-hidden"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info">
+                <h3 class="page-heding text-center mb-3">Lorem ipsum dolor sit amet</h3>
+                <p class="info-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium
+                   amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium
+                   amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem eius, labore recusandae alias repellendus quasi, corrupti praesentium
+                   amet esse fugiat! Obcaecati adipisci velit eaque ex iste dolorem eius soluta!
+                  </p>
+                <div class="nav-btn mt-5 d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary cutom-primary" id="sign_up">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="adver-section py-50">
+        <div class="container">
+            <div class="position-relative">
+              <h2 class="cnetrd-head">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h2>
+            </div>
+        </div>
+      </section>
+
+      </section>
+      <section class="explaination py-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="">
+                <img src="{% static 'images/manager.jpg' %}" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="Explain-data">
+                <h3 class="sub-heading">Data Manager</h3>
+                <p class="page-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Beatae sunt similique eos facere sint dolore consequuntur 
+                  laudantium natus quam at, consequatur quae sequi voluptatem 
+                  incidunt recusandae, magnam sapiente sit maiores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 align-self-center">
+              <div class="Explain-data">
+                <h3 class="sub-heading">Financing</h3>
+                <p class="page-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Beatae sunt similique eos facere sint dolore consequuntur 
+                  laudantium natus quam at, consequatur quae sequi voluptatem 
+                  incidunt recusandae, magnam sapiente sit maiores.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="">
+                <img src="{% static 'images/finanace.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="">
+                <img src="{% static 'images/hire.jpg' %}" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="Explain-data">
+                <h3 class="sub-heading">Hire Someone</h3>
+                <p class="page-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Beatae sunt similique eos facere sint dolore consequuntur 
+                  laudantium natus quam at, consequatur quae sequi voluptatem 
+                  incidunt recusandae, magnam sapiente sit maiores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 align-self-center">
+              <div class="Explain-data">
+                <h3 class="sub-heading">Knowldege Bank</h3>
+                <p class="page-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Beatae sunt similique eos facere sint dolore consequuntur 
+                  laudantium natus quam at, consequatur quae sequi voluptatem 
+                  incidunt recusandae, magnam sapiente sit maiores.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="">
+                <img src="{% static 'images/knowledge.j' %}pg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+      token = localStorage.getItem('token')
+      if (token){
+        $('#sign_up').hide();
+        
+      }
+      else {
+
+      }
+
+    </script>       
+{% endblock %}

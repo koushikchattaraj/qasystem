@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+ <meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/owl.theme.default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}/">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <title>webchefz</title>
+</head>
+<body>
+  <header class="header-area">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand cus-brand" href="{% url 'accounts:home' %}">LOGO</a>
+          <button class="navbar-toggler cus-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon cus-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item custm-nav mr-2">
+                      <a class="nav-link custm-nav-link" href="{% url 'accounts:home' %}">Home</a>
+                  </li>
+                  <li class="nav-item dropdown custom-dropdown mr-2">
+                      <a class="nav-link dropdown-toggle custm-nav-link custm-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions <i class="fas fa-chevron-down ms-2"></i></a>
+                      <ul class="dropdown-menu cstm-nav-dropdown" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Knowledge</a></li>
+                          <li><a class="dropdown-item" href="#">Data Manager</a></li>
+                          <li><a class="dropdown-item" href="#">Financing</a></li>
+                          <li><a class="dropdown-item" href="#">Hire Someone</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mr-2 dropdown custom-dropdown">
+                    <a class="nav-link dropdown-toggle custm-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company <i class="fas fa-chevron-down ms-2"></i></a>
+                    <ul class="dropdown-menu cstm-nav-dropdown" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                </li>
+                <li  class="nav-item">
+                  <div class="nav-btn d-flex">
+                    <a href="{% url 'accounts:sign_in' %}">
+                    <button type="button" class="btn cutom-primary ms-4 mr-2" id="login_btn">Login</button>
+                    </a>
+                    <a href="{% url 'accounts:sign_up' %}">
+                      <button type="button" class="btn secondary-btn" id="sign_up_btn">Sign Up</button>
+                      </a>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+
+<section class="drive-info my-4">
+        <div class="container-fluid">
+        	<div class="d-md-none menu_dots text-right">
+        		<svg class="gb_Ve" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+        	</div>
+        	<div class="d-flex">
+	        	<div class="drive-sidebar">
+	        		<ul class="list">
+	        			<li class="list-item nav-item dropdown">
+	        				<a class="nav-link new-file dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown"><i class="fas fa-plus plus-icon mr-2"></i>New</a>
+	        				<ul class="dropdown-menu new-file-dropdown" aria-labelledby="navbarDropdown">
+		                        <li><a class="dropdown-item drop-link" href="#" data-toggle="modal" data-target="#new_folder"><i class="fas fa-folder-plus mr-3 add-new-icon"></i>New Folder</a></li>
+		                        <li><a class="dropdown-item drop-link" href="#"><input type="file" class="d-none" name="" id="file_upload"><label for="file_upload" class="mb-0"><i class="fas fa-file-upload mr-3 add-new-icon"></i>File Upload</label></a></li>
+		                        <li><a class="dropdown-item drop-link" href="#"><input type="file" class="d-none" name="folder_upload" id="folder_upload" multiple = "true" webkitdirectory="true" directory = "true"><label for="folder_upload" class="mb-0"><i class="fas fa-folder-open mr-3 add-new-icon"></i>Folder Upload</label></a></li>
+                            <ul type="file" id="listing"></ul>
+		                    </ul>
+	        			</li>
+                {% with request.resolver_match.url_name as url_name %}
+	        			<li class="list-item">
+	        				<a href="{% url 'drive:newdrive' %}" class="drive-link {% if url_name == 'newdrive' %} inactive{% endif %}"><i class="fas fa-check mr-2"></i><span>Priority</span></a>
+	        			</li>
+	        			<li class="list-item">
+	        				<a href="{% url 'drive:newdrive' %}" class="drive-link {% if url_name == 'newdrive' %}active{% endif %}"><i class="fas fa-cloud mr-2"></i><span>My Drive</span></a>
+	        			</li>
+	        			<li class="list-item">
+	        				<a href="#" class="drive-link {% if url_name == '#' %}active{% endif %}"><i class="fas fa-share-alt mr-2"></i><span>Shared With Me</span></a>
+	        			</li>
+	        			<li class="list-item">
+	        				<a href="{% url 'accounts:recent' %}" class="drive-link {% if url_name == 'recent' %}active{% endif %}"><i class="fas fa-clock mr-2"></i><span>Recent</span></a>
+	        			</li>
+	        			<li class="list-item">
+	        				<a href="{% url 'accounts:starred' %}" class="drive-link {% if url_name == 'starred' %}active{% endif %}"><i class="fas fa-star mr-2"></i><span>Starred</span></a>
+	        			</li>
+	        			<li class="list-item">
+	        				<a href="{% url 'accounts:trash' %}" class="drive-link {% if url_name == 'trash' %}active{% endif %}"><i class="fas fa-trash mr-2"></i><span>Trash</span></a>
+	        			</li>
+                {% endwith %}
+	        		</ul>
+	        	</div>
+
+
+    {% block content %}
+    
+
+    {% endblock %}
+     
+</body>
+
+</html>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- <script src="{% static 'js/owl.carousel.min.js' %}"></script> -->
+<script>
+
+
+function parseJwt(token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+        return JSON.parse(jsonPayload);
+    };
+
+const token=localStorage.getItem("token");
+
+     if (token){
+       $('#login_btn').text('Sign Out');
+       $('#sign_up_btn').hide();
+       $('#login_btn').click(function() {
+        localStorage.removeItem('token')
+        window.location.reload()
+       });
+       $('.btn_signupin').attr('sign_out_id',parseJwt(token)['email']);
+     }
+     
+
+
+
+
+
+</script>
+
+{% block javascript %}
+{% endblock %}
+

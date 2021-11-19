@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Sign In</title>
+  </head>
+  <body>
+   
+   <section id="signin" class="login_front_div">
+     <div class="container">
+       <div class="subdomain">
+
+            <h1 class="sign_up_h1 text-center">Sign In</h1>
+            <div class="sign_in_form">
+              <form method="post" class="signin-form" action="">
+                <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                    <strong>You have provided invalid username or password!</strong>              
+                </div>
+              <div class="form-signin-group col-md-12 inner-addon left-addon">
+                <input type="email" name="email" class="form-control" id="uname" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at correct username">
+                <div class="validation"></div>
+              </div>
+              <input type="hidden" name="url" value="">
+              <div class="form-signin-group col-md-12 inner-addon left-addon">
+                <input type="password" name="password" class="form-control" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter at correct password">
+                <div class="validation"></div>
+              </div>
+              <div class="form-signin-group col-md-12 checkbox">
+                <div class="form-radion2"> <a data-toggle="modal" data-target="#forgot_password" href="javascript:void(0)">Forgot your password?</a> </div>
+              </div>
+              <div class="form-signin-group col-md-12 inner-addon">
+                <button type="submit" class="red-theme-btn">Sign In</button>
+              </div>
+              <div class="form-signin-group col-md-12 text-center"> <a href="" rel="canonical" class="create_account_link">Create Account</a> </div>
+            </form>
+            </div>
+       </div>
+     </div>
+   </section>
+
+
+   <div class="modal fade" id="forgot_password" tabindex="-1" role="dialog" aria-labelledby="forgot_password">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="cli-ent-model-box">
+        <div class="cli-ent-model">
+          <header class="fo-rm-header">
+            <h2 class="text-center">Forgot your Password?</h2>
+            <p class="sub-title">Enter your email address and we'll send you a link to reset your password.</p>
+          </header>
+          <div class="confirmation_btn text-center">
+            <form action="https://design.brandswaggin.com/welcome/forgot_password" method="post">
+              <div class="">
+                <input class="form-control input-c" type="email" placeholder="Email Address" name="email" id="email" value="">
+                <input class="form-control input-c" type="hidden" name="fromdomain" id="fromdomain" value="1"> </div>
+              <div class="">
+                <button class="red-theme-btn" type="submit">Send Link</button>
+                <p>Not a member? <strong><a href="" rel="canonical" class="create_account_link">Sign up!</a></strong></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

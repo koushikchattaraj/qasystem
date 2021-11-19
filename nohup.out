@@ -1,0 +1,1373 @@
+Watching for file changes with StatReloader
+[19/Nov/2021 08:08:53] "GET /sign_in/ HTTP/1.1" 200 12864
+[19/Nov/2021 08:08:53] "GET /sign_in/ HTTP/1.1" 200 12864
+[19/Nov/2021 08:08:57] "GET / HTTP/1.1" 200 14583
+[19/Nov/2021 08:09:44] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:09:44] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:09:44] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:11:24] "GET / HTTP/1.1" 200 14583
+[19/Nov/2021 08:11:24] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:11:24] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:11:24] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:11:45] "GET / HTTP/1.1" 200 14583
+[19/Nov/2021 08:11:45] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:11:45] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:11:45] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:12:43] "GET /sign_up/ HTTP/1.1" 200 11271
+[19/Nov/2021 08:12:44] "GET /static/images/signup.jpg HTTP/1.1" 200 2396192
+[19/Nov/2021 08:12:57] "GET / HTTP/1.1" 200 14583
+[19/Nov/2021 08:13:02] "GET /admin HTTP/1.1" 301 0
+[19/Nov/2021 08:13:02] "GET /admin/ HTTP/1.1" 302 0
+[19/Nov/2021 08:13:02] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+[19/Nov/2021 08:13:02] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[19/Nov/2021 08:13:02] "GET /static/admin/css/login.css HTTP/1.1" 200 939
+[19/Nov/2021 08:13:02] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[19/Nov/2021 08:13:02] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[19/Nov/2021 08:13:02] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[19/Nov/2021 08:13:03] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[19/Nov/2021 08:13:03] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[19/Nov/2021 08:13:03] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[19/Nov/2021 08:13:18] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[19/Nov/2021 08:13:18] "GET /admin/ HTTP/1.1" 200 13218
+[19/Nov/2021 08:13:18] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[19/Nov/2021 08:13:18] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[19/Nov/2021 08:13:18] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[19/Nov/2021 08:13:18] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[19/Nov/2021 08:13:18] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[19/Nov/2021 08:13:26] "GET /admin/accounts/user/ HTTP/1.1" 200 18308
+[19/Nov/2021 08:13:26] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[19/Nov/2021 08:13:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 08:13:26] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[19/Nov/2021 08:13:26] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[19/Nov/2021 08:13:26] "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+[19/Nov/2021 08:13:26] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[19/Nov/2021 08:13:26] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[19/Nov/2021 08:13:26] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[19/Nov/2021 08:13:26] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[19/Nov/2021 08:13:26] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[19/Nov/2021 08:13:26] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[19/Nov/2021 08:13:26] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[19/Nov/2021 08:13:26] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[19/Nov/2021 08:13:45] "GET /sign_in/ HTTP/1.1" 200 12864
+[19/Nov/2021 08:14:07] "POST /api/login/ HTTP/1.1" 200 240
+[19/Nov/2021 08:14:07] "GET /account HTTP/1.1" 301 0
+[19/Nov/2021 08:14:07] "GET /account/ HTTP/1.1" 200 25927
+[19/Nov/2021 08:14:07] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:14:07] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:14:07] "GET /api/user/ HTTP/1.1" 200 64
+[19/Nov/2021 08:14:33] "GET / HTTP/1.1" 200 14583
+[19/Nov/2021 08:16:36] "GET / HTTP/1.1" 200 14565
+[19/Nov/2021 08:16:39] "GET / HTTP/1.1" 200 14565
+[19/Nov/2021 08:16:41] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:16:41] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:16:41] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:17:48] "GET / HTTP/1.1" 200 14565
+[19/Nov/2021 08:18:05] "GET /sign_in/ HTTP/1.1" 200 12846
+[19/Nov/2021 08:18:05] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:18:06] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:18:06] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:18:08] "GET / HTTP/1.1" 200 14565
+[19/Nov/2021 08:18:08] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:18:08] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:18:08] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:18:28] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:18:28] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:18:28] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:20:15] "GET /sign_in/ HTTP/1.1" 200 12841
+[19/Nov/2021 08:20:15] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:20:17] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:20:17] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:20:19] "GET / HTTP/1.1" 200 14560
+[19/Nov/2021 08:20:19] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:20:19] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:20:19] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:21:32] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:21:32] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:21:32] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:21:32] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:21:38] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:23:02] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:23:03] "GET /static/images/signin.jpg HTTP/1.1" 200 2613083
+[19/Nov/2021 08:23:31] "GET /sign_up/ HTTP/1.1" 200 11304
+[19/Nov/2021 08:23:32] "GET /static/images/signup.jpg HTTP/1.1" 200 2396192
+[19/Nov/2021 08:33:39] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:33:39] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:33:39] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:37:03] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:37:03] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:37:03] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:37:03] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:39:24] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:39:24] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:39:24] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:40:17] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:40:17] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:40:18] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:40:18] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:41:32] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:47:15] "GET / HTTP/1.1" 200 14616
+Not Found: /favicon.ico
+[19/Nov/2021 08:47:16] "GET /favicon.ico HTTP/1.1" 404 9569
+[19/Nov/2021 08:48:14] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:48:25] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:48:31] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:48:36] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:48:44] "GET /sign_up/ HTTP/1.1" 200 11304
+[19/Nov/2021 08:48:59] "POST /api/sign_up/ HTTP/1.1" 200 73
+[19/Nov/2021 08:48:59] "GET /sign_in HTTP/1.1" 301 0
+[19/Nov/2021 08:48:59] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:49:07] "POST /api/login/ HTTP/1.1" 200 252
+[19/Nov/2021 08:49:07] "GET /account HTTP/1.1" 301 0
+[19/Nov/2021 08:49:07] "GET /account/ HTTP/1.1" 200 25960
+[19/Nov/2021 08:49:07] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:49:07] "GET /static/js/owl.carousel.min.js HTTP/1.1" 200 44342
+[19/Nov/2021 08:49:08] "GET /static/images/cupwithplant.jpg HTTP/1.1" 200 709787
+[19/Nov/2021 08:49:08] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:49:08] "GET /api/user/ HTTP/1.1" 200 166
+[19/Nov/2021 08:49:08] "GET /media/static/images/profileimage.png HTTP/1.1" 200 68461
+[19/Nov/2021 08:49:34] "PUT /api/user/ HTTP/1.1" 200 168
+[19/Nov/2021 08:49:37] "GET /account/ HTTP/1.1" 200 25960
+[19/Nov/2021 08:49:37] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:49:38] "GET /api/user/ HTTP/1.1" 200 207
+[19/Nov/2021 08:49:54] "PUT /api/user/ HTTP/1.1" 200 172
+[19/Nov/2021 08:50:10] "PUT /api/user/ HTTP/1.1" 200 171
+[19/Nov/2021 08:50:10] "GET /media/static/images/IMG-20211116-WA0001.jpg HTTP/1.1" 200 31837
+[19/Nov/2021 08:50:28] "GET /newdrive/ HTTP/1.1" 200 31038
+[19/Nov/2021 08:50:28] "GET /static/js/jquery.magnific-popup.js HTTP/1.1" 200 41730
+[19/Nov/2021 08:50:28] "GET /api/mainfolder/ HTTP/1.1" 200 52
+[19/Nov/2021 08:50:28] "GET /api/file/ HTTP/1.1" 200 50
+[19/Nov/2021 08:50:48] "POST /api/folder/ HTTP/1.1" 200 148
+[19/Nov/2021 08:50:48] "GET /api/mainfolder/ HTTP/1.1" 200 152
+[19/Nov/2021 08:50:52] "GET /newdrive/4 HTTP/1.1" 200 33351
+[19/Nov/2021 08:50:52] "GET /api/subfile/4 HTTP/1.1" 200 50
+[19/Nov/2021 08:50:52] "GET /api/folder/4 HTTP/1.1" 200 52
+[19/Nov/2021 08:51:19] "POST /api/file/ HTTP/1.1" 200 230
+[19/Nov/2021 08:51:20] "GET /api/subfile/4 HTTP/1.1" 200 183
+[19/Nov/2021 08:51:20] "GET /static/images/Screenshot%20from%202021-09-15%2018-05-39.png HTTP/1.1" 200 111105
+[19/Nov/2021 08:51:23] "GET /media/files/IMG_20211118_214958.HEIC HTTP/1.1" 200 2613875
+[19/Nov/2021 08:51:42] "GET /media/files/IMG_20211118_214958.HEIC HTTP/1.1" 304 0
+Internal Server Error: /api/folder/
+Traceback (most recent call last):
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/qasystem/drive/views.py", line 129, in delete
+    subfolder.is_deleted=True
+AttributeError: 'NoneType' object has no attribute 'is_deleted'
+[19/Nov/2021 08:51:50] "DELETE /api/folder/ HTTP/1.1" 500 93568
+[19/Nov/2021 08:52:03] "GET /newdrive/ HTTP/1.1" 200 31038
+[19/Nov/2021 08:52:04] "GET /api/mainfolder/ HTTP/1.1" 200 152
+[19/Nov/2021 08:52:04] "GET /api/file/ HTTP/1.1" 200 50
+[19/Nov/2021 08:52:06] "GET /newdrive/4 HTTP/1.1" 200 33351
+[19/Nov/2021 08:52:06] "GET /api/subfile/4 HTTP/1.1" 200 183
+[19/Nov/2021 08:52:06] "GET /api/folder/4 HTTP/1.1" 200 52
+[19/Nov/2021 08:52:07] "GET /newdrive/ HTTP/1.1" 200 31038
+[19/Nov/2021 08:52:07] "GET /api/mainfolder/ HTTP/1.1" 200 152
+[19/Nov/2021 08:52:07] "GET /api/file/ HTTP/1.1" 200 50
+[19/Nov/2021 08:52:18] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:52:24] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:52:31] "GET /account/ HTTP/1.1" 200 25960
+[19/Nov/2021 08:52:32] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:52:32] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 08:52:32] "GET /api/user/ HTTP/1.1" 200 210
+[19/Nov/2021 08:52:32] "GET /media/static/images/IMG-20211116-WA0001.jpg HTTP/1.1" 304 0
+[19/Nov/2021 08:53:02] "GET /ask-question/ HTTP/1.1" 200 9442
+[19/Nov/2021 08:53:19] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:57:54] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:57:54] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:57:54] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:58:14] "GET / HTTP/1.1" 200 14616
+Not Found: /favicon.ico
+[19/Nov/2021 08:58:15] "GET /favicon.ico HTTP/1.1" 404 9569
+[19/Nov/2021 08:58:31] "GET /newdrive/ HTTP/1.1" 200 31038
+[19/Nov/2021 08:58:31] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:58:31] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:58:31] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+Unauthorized: /api/mainfolder/
+[19/Nov/2021 08:58:31] "GET /api/mainfolder/ HTTP/1.1" 401 58
+Unauthorized: /api/file/
+[19/Nov/2021 08:58:31] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:58:31] "GET /api/file/ HTTP/1.1" 401 58
+[19/Nov/2021 08:58:31] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:58:32] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:58:32] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:59:17] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:59:17] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:59:17] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:59:17] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:59:20] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:59:21] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:59:21] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:59:21] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:59:30] "GET / HTTP/1.1" 200 14616
+[19/Nov/2021 08:59:31] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:59:31] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:59:31] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 08:59:34] "GET /sign_in/ HTTP/1.1" 200 12897
+[19/Nov/2021 08:59:35] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 08:59:35] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 08:59:35] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:00:26] "GET /sign_in/ HTTP/1.1" 200 12900
+[19/Nov/2021 09:00:26] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:00:26] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:00:26] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:00:40] "GET / HTTP/1.1" 200 14619
+[19/Nov/2021 09:00:40] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:00:41] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:00:41] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:00:51] "GET /sign_in/ HTTP/1.1" 200 12900
+[19/Nov/2021 09:00:52] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:00:52] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:00:52] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:02:21] "GET /sign_in/ HTTP/1.1" 200 12959
+[19/Nov/2021 09:02:22] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:02:22] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:02:22] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:03:25] "GET /sign_in/ HTTP/1.1" 200 12969
+[19/Nov/2021 09:03:25] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:03:26] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:03:26] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:03:30] "GET / HTTP/1.1" 200 14688
+[19/Nov/2021 09:03:30] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:03:30] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:03:30] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:03:34] "GET /account/ HTTP/1.1" 200 26032
+[19/Nov/2021 09:03:34] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:03:34] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+Unauthorized: /api/user/
+[19/Nov/2021 09:03:34] "GET /api/user/ HTTP/1.1" 401 58
+[19/Nov/2021 09:03:34] "GET /sign_in/ HTTP/1.1" 200 12969
+[19/Nov/2021 09:03:37] "GET / HTTP/1.1" 200 14688
+[19/Nov/2021 09:05:11] "GET / HTTP/1.1" 200 14776
+[19/Nov/2021 09:05:18] "GET / HTTP/1.1" 200 14776
+[19/Nov/2021 09:05:21] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:05:23] "GET / HTTP/1.1" 200 14776
+[19/Nov/2021 09:05:30] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:05:32] "GET / HTTP/1.1" 200 14776
+[19/Nov/2021 09:06:09] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:06:09] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:06:09] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:06:40] "GET /sign_up/ HTTP/1.1" 200 11464
+[19/Nov/2021 09:06:40] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1836
+[19/Nov/2021 09:06:41] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1821
+[19/Nov/2021 09:06:41] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1830
+[19/Nov/2021 09:06:53] "GET / HTTP/1.1" 200 14776
+[19/Nov/2021 09:07:02] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:07:32] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:07:52] "GET /sign_up/ HTTP/1.1" 200 11464
+[19/Nov/2021 09:09:09] "GET /admin/ HTTP/1.1" 302 0
+[19/Nov/2021 09:09:10] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+[19/Nov/2021 09:09:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[19/Nov/2021 09:09:10] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[19/Nov/2021 09:09:22] "GET /admin/ HTTP/1.1" 200 13218
+[19/Nov/2021 09:09:25] "GET /admin/accounts/user/ HTTP/1.1" 200 19246
+[19/Nov/2021 09:09:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:09:33] "GET /admin/accounts/user/37/change/ HTTP/1.1" 200 23518
+[19/Nov/2021 09:09:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:09:33] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[19/Nov/2021 09:09:33] "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+[19/Nov/2021 09:09:33] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[19/Nov/2021 09:09:33] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[19/Nov/2021 09:09:33] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[19/Nov/2021 09:09:33] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[19/Nov/2021 09:09:34] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[19/Nov/2021 09:09:34] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 08:08:53
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+adminxyz //////
+admin -------
+<class 'django.contrib.auth.models.User'>
+30 //////****///////
+[]
+kc47777@gmail.com //////
+qqqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+37 //////****///////
+[OrderedDict([('bio', None), ('image', None), ('votes', 0)])]
+Koushik Chattaraj **********
+<QueryDict: {'name': ['Koushik Chattaraj'], 'bio': [''], 'image': [<InMemoryUploadedFile: IMG_20211118_160957.HEIC (image/heic)>]}> **********
+37 //////****///////
+[OrderedDict([('bio', ''), ('image', '/media/static/images/IMG_20211118_160957.HEIC'), ('votes', 0)])]
+Koushik Chattaraj **********
+<QueryDict: {'name': ['Koushik Chattaraj'], 'bio': ['Test']}> **********
+Koushik Chattaraj **********
+<QueryDict: {'name': ['Koushik Chattaraj'], 'bio': ['Test'], 'image': [<InMemoryUploadedFile: IMG-20211116-WA0001.jpg (image/jpeg)>]}> **********
+<QuerySet []>
+<QuerySet []>
+37 //////****///////
+[OrderedDict([('bio', 'Test'), ('image', '/media/static/images/IMG-20211116-WA0001.jpg'), ('votes', 0)])]
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:09:53
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 63
+    user = User(email=email, username=email, name=name, is)
+                                                        ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 63
+    user = User(email=email, username=email, name=name, is_active=)
+                                                                  ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:10:05
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:10:07
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[19/Nov/2021 09:10:18] "GET /sign_up/ HTTP/1.1" 200 11464
+[19/Nov/2021 09:10:33] "POST /api/sign_up/ HTTP/1.1" 200 73
+[19/Nov/2021 09:10:33] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:10:38] "GET /admin/accounts/user/ HTTP/1.1" 200 20132
+[19/Nov/2021 09:10:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:10:46] "GET /admin/accounts/user/38/change/ HTTP/1.1" 200 23435
+[19/Nov/2021 09:10:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:10:10
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:11:42
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:11:49
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 35
+    user = authenticate(email=email, password=password, is)
+                                                        ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:11:57
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[19/Nov/2021 09:12:12] "POST /api/login/ HTTP/1.1" 200 245
+[19/Nov/2021 09:12:12] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:12:12] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:12:12] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+Unauthorized: /api/user/
+[19/Nov/2021 09:12:12] "GET /api/user/ HTTP/1.1" 401 38
+[19/Nov/2021 09:12:29] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:12:39] "GET /admin/accounts/user/ HTTP/1.1" 200 20155
+[19/Nov/2021 09:12:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:12:42] "GET /admin/accounts/user/37/change/ HTTP/1.1" 200 23518
+[19/Nov/2021 09:12:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:12:44] "GET /admin/accounts/user/ HTTP/1.1" 200 20155
+[19/Nov/2021 09:12:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Bad Request: /api/login/
+[19/Nov/2021 09:13:00] "POST /api/login/ HTTP/1.1" 400 74
+Bad Request: /api/login/
+[19/Nov/2021 09:13:04] "POST /api/login/ HTTP/1.1" 400 74
+Bad Request: /api/login/
+[19/Nov/2021 09:13:10] "POST /api/login/ HTTP/1.1" 400 74
+[19/Nov/2021 09:13:17] "POST /api/login/ HTTP/1.1" 200 252
+[19/Nov/2021 09:13:17] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:13:17] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:13:17] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:13:17] "GET /api/user/ HTTP/1.1" 200 210
+[19/Nov/2021 09:13:17] "GET /media/static/images/IMG-20211116-WA0001.jpg HTTP/1.1" 200 31837
+[19/Nov/2021 09:13:20] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:13:20] "GET /sign_in/ HTTP/1.1" 200 13057
+[19/Nov/2021 09:13:22] "GET /admin/accounts/user/37/change/ HTTP/1.1" 200 23518
+[19/Nov/2021 09:13:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:13:28] "POST /admin/accounts/user/37/change/ HTTP/1.1" 302 0
+[19/Nov/2021 09:13:28] "GET /admin/accounts/user/ HTTP/1.1" 200 20366
+[19/Nov/2021 09:13:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:13:45] "POST /api/login/ HTTP/1.1" 200 252
+[19/Nov/2021 09:13:45] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:13:45] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:13:45] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+Unauthorized: /api/user/
+[19/Nov/2021 09:13:45] "GET /api/user/ HTTP/1.1" 401 38
+[19/Nov/2021 09:13:53] "GET /admin/accounts/user/37/change/ HTTP/1.1" 200 23510
+[19/Nov/2021 09:13:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:13:57] "POST /admin/accounts/user/37/change/ HTTP/1.1" 302 0
+[19/Nov/2021 09:13:57] "GET /admin/accounts/user/ HTTP/1.1" 200 20366
+[19/Nov/2021 09:13:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:13:59] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:13:59] "GET /static/js/bootstrap.js HTTP/1.1" 404 1806
+[19/Nov/2021 09:13:59] "GET /api/user/ HTTP/1.1" 200 210
+[19/Nov/2021 09:14:02] "GET /admin/accounts/user/38/change/ HTTP/1.1" 200 23471
+[19/Nov/2021 09:14:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:14:07] "POST /admin/accounts/user/38/change/ HTTP/1.1" 302 0
+[19/Nov/2021 09:14:07] "GET /admin/accounts/user/ HTTP/1.1" 200 20361
+[19/Nov/2021 09:14:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Nov/2021 09:14:11] "GET /account/ HTTP/1.1" 200 26120
+[19/Nov/2021 09:14:11,026] - Broken pipe from ('192.168.1.9', 35182)
+
+[19/Nov/2021 09:14:11] "GET /sign_in/ HTTP/1.1" 200 13057
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:12:00
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+abc@test.com //////
+qqqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+kc47777@gmail.com //////
+qqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+kc47777@gmail.com //////
+qqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+kc47777@gmail.com //////
+qqqqqq -------
+<class 'django.contrib.auth.models.User'>
+kc47777@gmail.com //////
+qqqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+37 //////****///////
+[OrderedDict([('bio', 'Test'), ('image', '/media/static/images/IMG-20211116-WA0001.jpg'), ('votes', 0)])]
+kc47777@gmail.com //////
+qqqqqqqq -------
+<class 'django.contrib.auth.models.User'>
+37 //////****///////
+[OrderedDict([('bio', 'Test'), ('image', '/media/static/images/IMG-20211116-WA0001.jpg'), ('votes', 0)])]
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:14:28
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 19, 2021 - 09:14:35
+Django version 3.2.7, using settings 'qasystem.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user
+          ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active
+                    ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active=
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active=""
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False"
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False":
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False":
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False":
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False":
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active="False":
+                     ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/qasystem/urls.py", line 9, in <module>
+    path('', include("questions.urls")),
+  File "/home/xboy/project/qasystemDrive/venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/urls.py", line 1, in <module>
+    from questions.views import  QuestionApiView, QuestionView, AllQuestionApiView, allQuestionView 
+  File "/home/xboy/project/qasystemDrive/qasystem/questions/views.py", line 18, in <module>
+    from answers.serilizers import AnswerSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/answers/serilizers.py", line 6, in <module>
+    from accounts.serializers import UserSerilizers
+  File "/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py", line 36
+    if user.is_active is :
+                         ^
+SyntaxError: invalid syntax
+/home/xboy/project/qasystemDrive/qasystem/accounts/serializers.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[19/Nov/2021 13:52:00] "GET /sign_in/ HTTP/1.1" 200 13090
+[19/Nov/2021 13:52:22] "GET /sign_in/ HTTP/1.1" 200 13090
+[19/Nov/2021 13:52:30] "GET /account_verification/57/cJRuNmAqfydVPQZT HTTP/1.1" 302 0
+[19/Nov/2021 13:52:30] "GET /sign_in/ HTTP/1.1" 200 13425
+[19/Nov/2021 13:54:06] "GET /sign_in/ HTTP/1.1" 200 13090
+[19/Nov/2021 13:54:36] "GET /sign_in/ HTTP/1.1" 200 13090

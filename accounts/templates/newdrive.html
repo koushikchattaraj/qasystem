@@ -1,0 +1,705 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% block title %} {% endblock %}
+	        	<div class="main-content">
+	        		<div class="mb-2">
+	        			<nav aria-label="breadcrumb">
+							<ol class="breadcrumb bread_head">
+							    <li class="breadcrumb-item cstm-bread-item"><a class="bread-link" href="/newdrive/">My Drive</a></li>
+							</ol>
+						</nav>
+	        		</div>
+		            <h6 class="folder-heading text-secondary ps-3 mb-3">Folders</h6>
+		            <div class="row folder_sec">
+		            </div>
+		            <h6 class="folder-heading text-secondary ps-3 mt-5 mb-3">Files</h6>
+		            <div class="row file_store">	
+		                <!-- This is for file fields -->
+		            </div>
+		        </div>
+		    </div>
+        </div>
+      </section>
+      <div class="modal fade" id="new_folder" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">New Folder</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <input type="text" class="form-control" placeholder="Folder Name" name="" id="folder_name">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary" id="create_folder" data-dismiss="" >Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+      <div class="modal fade" id="rename_modal" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Rename</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <input type="text" class="form-control" placeholder="Folder Name" name="" id="rename_folder">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+		        <button type="button" class="btn btn-primary" id="rename_folder_btn">Ok</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="file_rename_modal" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Rename</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <input type="text" class="form-control" placeholder="File Name" name="" id="rename_file">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+		        <button type="button" class="btn btn-primary" id="rename_file_btn">Ok</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="remove_modal" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Remove</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>Want to remove?</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+		        <button type="button" class="btn btn-danger" id="delete_folder">Yes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" integrity="sha512-aUhL2xOCrpLEuGD5f6tgHbLYEXRpYZ8G5yD+WlFrXrPy2IrWBlu6bih5C9H6qGsgqnU6mgx6KtU8TreHpASprw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.menu_dots svg').click(function(){
+		$('.drive-sidebar').toggleClass('active');
+	})
+	$('.render_file').magnificPopup({
+		type: 'iframe'
+	});
+	$('.mfp-close').html("<i class='fas fa-arrow-left'>");
+	$('.folders-sec').bind("contextmenu",function(e){
+		$('.right-dropdown').hide();
+		$('.right-dropdown').removeClass('active');
+		$('.folders-sec').removeClass('active');
+		$(this).addClass('active');
+		var e = window.event;
+	    var posX = e.clientX;
+	    var posY = e.clientY;
+
+	    // console.log(posX , posY);
+		$(this).children('.right-dropdown').show(300);
+		$(this).children('.right-dropdown').addClass('active');
+		return false;
+	})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+})
+if (token){
+
+}
+else{
+        window.location.replace('/sign_in');
+    }
+
+function getCookie(name) {
+			var cookieValue = null;
+			if (document.cookie && document.cookie != '') {
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = cookies[i].trim();
+					// Does this cookie string begin with the name we want?
+					if (cookie.substring(0, name.length + 1) == (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+
+	var data_id;
+function getFunction(){
+	axios.get("/api/mainfolder/",{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-3">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div  class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred starred-link right-drop-link" href="#" file_id=${item.id} ><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+							$('.right-dropdown').hide();
+							$('.folders-sec').removeClass('active');
+
+						});
+						$(document).ready(function(){
+							$('.folders-sec').dblclick(function(){
+								folder_id = $(this).attr("data-id");
+								window.location.replace(`/newdrive/${folder_id}`)
+							})
+						});
+						return folder_temp
+		});
+		$('.folder_sec').html(folder_temp)
+
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    console.log(posX , posY);
+			data_id = $(this).attr("data-id");
+			console.log(data_id)
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			const file_id = $(this).attr('file_id');
+
+
+
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+				const folderdetail = {
+				id:data_id,
+				is_starred:"True",
+				}
+				console.log(folderdetail);
+				const csrftoken = getCookie('csrftoken');
+				console.log(csrftoken)
+				const headers = {
+								'Content-Type': 'application/json',
+								'X-CSRFToken': csrftoken,
+								'Authorization': localStorage.getItem('token')
+								}
+
+				axios
+				.put("/api/folder/", folderdetail,{
+				headers: headers
+				})
+				.then((res) => {
+				console.log("Post successful!")
+				$('#rename_modal').modal('hide')
+					getFunction();
+				})
+				.catch(() => {
+				console.log("Oops, request failed!")
+				}) 
+
+			}
+		});
+
+	});
+
+}
+
+getFunction();
+getFileFunction();
+
+$('#create_folder').click(function(){
+	console.log("------------")
+
+	const folderdetail = {
+	name:$('#folder_name').val(),
+	
+	}
+	console.log(folderdetail,"/*/*/*/*/*/*/*/*/*/**/");
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/folder/", folderdetail,{
+	headers: headers
+	})
+	.then((res) => {
+	console.log(res.data.data.id,"***************-----")
+	$.cookie(res.data.data.id,res.data.data.id,{ expires : 1 });
+	console.log("Post successful!")
+	$('#new_folder').modal('hide')
+	getFunction();
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+	});
+
+	$('#rename_folder_btn').click(function(){
+	const folderdetail = {
+	id:data_id,
+	name:$('#rename_folder').val(),
+	}
+	console.log(folderdetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.put("/api/folder/", folderdetail,{
+	headers: headers
+	})
+	.then((res) => {
+	$('#rename_modal').modal('hide')
+	console.log("Post successful!")
+	getFunction();
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+
+	var file_id = '';
+	function getFileFunction(){
+	axios.get("/api/file/",{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		console.log(resp.data.data,"*-*-**-*-*-*-*-*-*-*-**-**-")
+		file_temp='',
+		resp.data.data.map(function(item){
+			console.log(item)
+			file_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+		                    <div class="folders-sec" file_id=${item.id}>
+		                        <div class="folders border rounded">
+		                            <div class="file-icon text-secondary p-2"><a class="render_file" href="${item.document}"><img src="{% static 'images/Screenshot from 2021-09-15 18-05-39.png' %}" alt=""></a></div>
+		                            <div class="p-2 text-secondary d-flex align-items-center filename-div"><i class="fas fa-file-${item.extension} ${item.extension}-icon file-icon mr-2"></i><span class="file-txt text-center">${item.name}</span></div>
+		                        </div>
+		                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+			                        <li>
+			                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#file_rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+			                        </li>
+			                        <li>
+			                        	<a class="dropdown-item starred-link right-drop-link" href="#" id="starred"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+			                        </li>
+			                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+			                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+			                    </ul>
+		                    </div>
+		                </div>`
+						$(document).click(function(){
+							$('.right-dropdown').hide();
+							$('.folders-sec').removeClass('active');
+						});
+						return file_temp
+		});
+
+		$(document).ready(function(){
+			$('.folders-sec').contextmenu(function(){
+				file_id = $(this).attr('file_id');
+				console.log(file_id);
+			})
+		});
+		$('.file_store').html(file_temp)
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			// $(this).children('.right-dropdown').offset({top : posY});
+			// $(this).children('.right-dropdown').offset({left : posX});
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+				const folderdetail = {
+				id:file_id,
+				is_starred:"True",
+				}
+				console.log(folderdetail);
+				const csrftoken = getCookie('csrftoken');
+				console.log(csrftoken)
+				const headers = {
+								'Content-Type': 'application/json',
+								'X-CSRFToken': csrftoken,
+								'Authorization': localStorage.getItem('token')
+								}
+
+				axios
+				.put("/api/file/", folderdetail,{
+				headers: headers
+				})
+				.then((res) => {
+				console.log("Post successful!")
+				$('#rename_modal').modal('hide')
+					getFileFunction();
+				})
+				.catch(() => {
+				console.log("Oops, request failed!")
+				}) 
+
+
+			}
+		});
+
+	});
+}
+
+	
+
+
+	$('#file_upload').change(function(){
+		var formData = new FormData();
+        // var imagefile = document.querySelector('#profileimage');
+        formData.append('document', $('#file_upload')[0].files[0]);
+		console.log($('#file_upload')[0].files[0])
+	console.log("------On Change------")
+
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	console.log(localStorage.getItem('token'))
+
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/file/", formData,{
+	headers: headers
+	})
+	.then((resp) => {
+	console.log("Post successful!")
+	getFileFunction();
+	})
+	.catch((resp) => {
+	console.log("Oops, request failed!**************************")
+	alert("This File Already Uploaded")
+	}) 
+
+	});
+
+	
+	$('#delete_folder').click(function(){
+		console.log("------------")
+
+	const folderdetail = {
+	id:data_id
+	
+	}
+	console.log(folderdetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	console.log(localStorage.getItem('token'))
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+console.log(headers)
+	axios
+	.delete("/api/folder/",{
+	headers: headers,
+	data: folderdetail
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	axios.get("/api/mainfolder/",{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		$('#new_folder').modal('hide')
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-3">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div data-id=${item.id} class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred-link right-drop-link" href="#" id="starred"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+							$('.right-dropdown').hide();
+							$('.folders-sec').removeClass('active');
+							
+						});
+						$(document).ready(function(){
+							$('.folders-sec').dblclick(function(){
+								folder_id = $(this).attr("data-id");
+								window.location.replace(`/newdrive/${folder_id}`)
+							})
+						});
+						return folder_temp
+		});
+
+		$('.folder_sec').html(folder_temp)
+		
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			// $(this).children('.right-dropdown').offset({top : posY});
+			// $(this).children('.right-dropdown').offset({left : posX});
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+				alert('Star Added');
+			}
+		});
+
+	});
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+
+	});
+
+	// file Rename
+
+	$('#rename_file_btn').click(function(){
+	const filedetail = {
+	id:file_id,
+	name:$('#rename_file').val(),
+	}
+	console.log(filedetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.put("/api/file/", filedetail,{
+	headers: headers
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	$('#file_rename_modal').modal('hide')
+	getFileFunction();
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+
+	//  end Rename 
+
+	$('#folder_upload').val('');
+	let picker = document.getElementById('folder_upload');
+	let listing = document.getElementById('listing');
+	picker.addEventListener('change', e => {
+		$('#listing').html('');
+
+	  for (let file of Array.from(e.target.files)) {
+	    let item = document.createElement('li');
+	    item.textContent = file.webkitRelativePath;
+	    listing.appendChild(item);
+	  };
+	  var fullfolder_name = $('#listing li:first').text().split('/')[0];
+		console.log(fullfolder_name);
+
+	const folderdetail = {
+	name:fullfolder_name,
+	
+	}
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/folder/", folderdetail,{
+	headers: headers
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	var folderupload_id = res.data.data.id
+
+	// Upload File
+	var formData = new FormData();
+
+		var all_files = [];
+		for (var x = 0; x < e.target.files.length; x++) {
+			formData.append('document',e.target.files[x]);
+		}
+        formData.append('parent',folderupload_id);
+
+		console.log(e.target.files,"---------TypeFiles-----")
+		console.log("------On Change------")
+
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	console.log(localStorage.getItem('token'))
+
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/folderfile/", formData,{
+	headers: headers
+	})
+	.then((resp) => {
+		console.log("Post successful!")
+		});
+	// Upload File
+	getFunction();
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+	// Add to Stared
+
+
+
+	
+
+</script>
+{% endblock %}

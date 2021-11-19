@@ -1,0 +1,49 @@
+A_vec=[A_vec;A];
+
+Speed_Drive_Cycle=[Speed_Drive_Cycle,Speed_Drive(t)];
+
+VOLTAGE=Lookup_Table(:,2)##data load
+
+xq1 = 0:0.001:1 ##interpolation
+
+V_init(1)=0
+
+real_SOC_vec =[]
+
+Tb(1)= Tbi
+
+display_soc_pack=sum(soc_cal_module(1,:))*100/num_cell_series
+
+Cn=cap_cells*3600
+
+terminal_voltage_pack=sum(terminal_voltage(1,:))
+
+resist_mean=mean(resist_cells(1,:))
+
+OCV=interp1(xq1,poly_plot_OCV,soc_cal_module);%%interpolation
+
+Tao1=(resist_1.*capacitor_1).^-1
+
+Tao2=(resist_2.*capacitor_2).^-1
+
+time(i)=i
+
+time_vec=[time_vec,time(i)/3600]
+
+des_velocity_vec=[des_velocity_vec;des_velocity_ms(i)*3600/1000]
+
+des_tot_force_vec=[des_tot_force_vec; des_tot_trac(i)]
+
+des_motor_torque_vec=[des_motor_torque_vec;des_motor_torque(i)]#desired motor torque obtained
+
+soc_cal_module(i,:)=soc_cal_module(i-1,:) - current(i-1)*1*((Cn).^-1)
+
+OCV(i,:)=interpolate.interp1d(xq1,poly_plot_OCV ,soc_cal_module(i,:))
+
+OCV_min=min(OCV(i,:))
+
+current_max_vmin(i)=(OCV_min-v_min_cell)/resist_mean
+
+ir1(i,:)=(exp(-Tao1)).*(ir1(i-1,:))+((1-exp(-Tao1)).*current(i))
+
+terminal_voltage(i,:)=OCV(i,:)- resist_cells.*current(i)- resist_1.*ir1(i,:)- resist_2.*ir2(i,:)

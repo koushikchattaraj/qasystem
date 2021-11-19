@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <head>
+
+    
+    {% block title %} {% endblock %}
+  </head>
+  <body>
+        <section class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="custom-header">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="display: none;" class="alert alert-primary alert-dismissible fade show flash_cam_error success_edit_profile" role="alert">
+          <div class="">
+             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <strong>User Profile edited Successfully! </strong> 
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+        <section class="internal">
+            <div class="container">
+                <div class="px-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cus-sidenav p-3 mb-3">
+                            <div class="right-slider">
+                                <div class="df bg-white">
+                                    <div class="dbf d-flex">
+                                        <div class="slider-img" id="profile_image"><img src=""width="100px" alt=""></div>
+                                        <div class="slider-txt d-flex align-items-center ms-3">
+                                            <h6 class="name-txt  ml-2" id="name-txt"> <br><span class="editor-txt">Editor</span></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="mt-3" id="bio_section"></p>
+                                    <div class="slider-btns d-flex justify-content-center text-center my-3">
+                                        <button type="button" class="follow-btn mr-3">FOLLOW</button>
+                                        <button type="button" class="message-btn">MESSAGE</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="{% url 'question:ask-question' %}">
+                                            <button type="button" class="btn btn-primary custm-primary">Ask Question</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="download-section p-3">
+                            <ul class="nav nav-custom" id="myTab" role="tablist">
+                                <li class="nav-item custom-item" role="presentation"><button class="nav-link custom-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Profile</button></li>
+                                <li class="nav-item custom-item" role="presentation"><button class="nav-link custom-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Activity</button></li>
+                                <li class="nav-item custom-item" role="presentation"><button class="nav-link custom-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Developer Story</button></li>
+                                <li class="nav-item custom-item" role="presentation"><button class="nav-link custom-link" id="profiles-tab" data-toggle="tab" data-target="#profiles" type="button" role="tab" aria-controls="profiles" aria-selected="false">Settings</button></li>
+                            </ul>
+                            <hr>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="content-section">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="text-section">
+                                                    <h4>Stats</h4>
+                                                    <div class="starts">
+                                                        <ul class="d-flex list-unstyled justify-content-center p-3">
+                                                            <li class="starts-li">
+                                                                <div class="num" id="question_no"></div>
+                                                                <div class="result-num">Ask Question</div>
+                                                            </li>
+                                                            <li class="starts-li">
+                                                                <div class="num" id="answer_no"></div>
+                                                                <div class="result-num">Total Answer</div>
+                                                            </li>
+                                                            <li class="starts-li">
+                                                                <div class="num">31</div>
+                                                                <div class="result-num">FOLLOWING</div>
+                                                            </li>
+                                                            <li class="starts-li">
+                                                                <div class="num">1</div>
+                                                                <div class="result-num">FOLLOWERS</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <hr>
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere libero consequuntur eveniet neque beatae, 
+                                                    perspiciatis quam iure id amet asperiores est, unde rem odit culpa fuga illum nesciunt! Voluptatibus, ad? Lorem 
+                                                    ipsum dolor sit amet consectetur, adipisicing elit. Rem modi hic dolore animi. Aut dicta soluta, error ea repellendus 
+                                                    explicabo minus alias, corporis deleniti distinctio eos ab reprehenderit? Veritatis, ullam? Lorem ipsum dolor sit amet 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="content-section">
+                                        <div class="text-section p-5">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere libero consequuntur eveniet neque beatae, 
+                                            perspiciatis quam iure id amet asperiores est, unde rem odit culpa fuga illum nesciunt! Voluptatibus, ad? Lorem 
+                                            ipsum dolor sit amet consectetur, adipisicing elit. Rem modi hic dolore animi. Aut dicta soluta, error ea repellendus 
+                                            explicabo minus alias, corporis deleniti distinctio eos ab reprehenderit? Veritatis, ullam? Lorem ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Quaerat, eligendi in. Facilis modi rerum magnam amet laudantium, dolorum quos, sapiente 
+                                            fugiat tempora totam ullam ut architecto ab sint ipsum esse!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing 
+                                            elit. Non eaque, quae amet praesentium quisquam facere repellendus. Ipsam consectetur dolor corporis, provident consequatur 
+                                            corrupti veniam, recusandae optio, repudiandae quibusdam rerum iusto!
+                                        </div>
+                                    </div>                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="content-section">
+                                        <div class="text-section p-5">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere libero consequuntur eveniet neque beatae, 
+                                            perspiciatis quam iure id amet asperiores est, unde rem odit culpa fuga illum nesciunt! Voluptatibus, ad? Lorem 
+                                            ipsum dolor sit amet consectetur, adipisicing elit. Rem modi hic dolore animi. Aut dicta soluta, error ea repellendus 
+                                            explicabo minus alias, corporis deleniti distinctio eos ab reprehenderit? Veritatis, ullam? Lorem ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Quaerat, eligendi in. Facilis modi rerum magnam amet laudantium, dolorum quos, sapiente 
+                                            fugiat tempora totam ullam ut architecto ab sint ipsum esse!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing 
+                                            elit. Non eaque, quae amet praesentium quisquam facere repellendus. Ipsam consectetur dolor corporis, provident consequatur 
+                                            corrupti veniam, recusandae optio, repudiandae quibusdam rerum iusto!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere libero consequuntur eveniet neque beatae, 
+                                            perspiciatis quam iure id amet asperiores est, unde rem odit culpa fuga illum nesciunt! Voluptatibus, ad? Lorem 
+                                            ipsum dolor sit amet consectetur, adipisicing elit. Rem modi hic dolore animi. Aut dicta soluta, error ea repellendus 
+                                            explicabo minus alias, corporis deleniti distinctio eos ab reprehenderit? Veritatis, ullam? Lorem ipsum dolor sit amet 
+                                            consectetur adipisicing elit. Quaerat, eligendi in. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profiles" role="tabpanel" aria-labelledby="profiles-tab">
+                                    <div class="content-section">
+                                        <div class="text-section p-5">
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group">
+                                                        <input type="text" readonly class="form-control" id="profileemail" value="" placeholder="" >
+                                                    </div>
+                                                </div>
+                                                <!-- ********************** -->
+                                                <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group">
+                                                        <input type="text"  class="form-control " id="profilename" value="" placeholder="" >
+                                                    </div>
+                                                </div>
+                                                <!-- ********************** -->
+                                                <!-- ********************** -->
+                                                <label for="staticEmail" class="col-sm-2 col-form-label">Bio</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group">
+                                                        <input type="text"  class="form-control " id="profilebio" placeholder="" value="" >
+                                                    </div>
+                                                </div>
+                                                <!-- ********************** -->
+                                                 <!-- ********************** -->
+                                                 <label for="staticEmail" class="col-sm-2 col-form-label">Image</label>
+                                                 <div class="col-sm-10">
+                                                    <div class="form-group">
+                                                        <input type="file"  accept="image/*" class="form-control form-control-plaintext" id="profileimage" placeholder="" value="" >
+                                                    </div>
+                                                 </div>
+                                                 <!-- ********************** -->
+                                                <hr>
+                                                <div class="text-center mt-3 col-md-12">
+                                                    <button type="button" class="btn btn-outline-success" id="btn_submit">Update Profile</button> 
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    
+    function getCookie(name) {
+              var cookieValue = null;
+              if (document.cookie && document.cookie != '') {
+                  var cookies = document.cookie.split(';');
+                  for (var i = 0; i < cookies.length; i++) {
+                      var cookie = cookies[i].trim();
+                      // Does this cookie string begin with the name we want?
+                      if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                          break;
+                      }
+                  }
+              }
+              return cookieValue;
+            }
+            token = localStorage.getItem('token')
+             if (token){
+            }
+            else {
+              window.location.replace('/sign_in');
+            }
+
+
+    axios.get("/api/user/",{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+        $('#name-txt').html(resp.data.user_data[0].name);
+        $('#question_no').html(resp.data.question_no);
+        $('#answer_no').html(resp.data.answer_no);
+        
+        $('#profileemail').attr("value", resp.data.user_data[0].username);
+        $('#profilename').attr("value", resp.data.user_data[0].name);
+        const image = resp.data.user_profile[0].image
+        const profileimg = "/media/static/images/profileimage.png"
+        if (image !== null){
+            $('#profile_image').html('<img src= '+image+' />');
+        } else{
+            $('#profile_image').html('<img src= '+profileimg+' />');
+        }
+        const bio = resp.data.user_profile[0].bio
+        if (bio !== null){
+            $('#profilebio').attr("value", bio);
+            $('#bio_section').html(resp.data.user_profile[0].bio);
+        }
+        console.log(resp.data)
+    });
+
+
+
+    $('#btn_submit').click(function(){
+        console.log($( '#profileimage' )[0].files.length)
+
+
+        var formData = new FormData();
+        // var imagefile = document.querySelector('#profileimage');
+        formData.append('name', $('#profilename').val());
+        formData.append('bio', $('#profilebio').val());
+        if ($( '#profileimage' )[0].files.length > 0){
+            formData.append('image', $( '#profileimage' )[0].files[0]);
+        }
+        
+        console.log(formData,"*************")
+
+        
+      const userprofile = {
+        name:$('#profilename').val(),
+        bio:$('#profilebio').val(),
+        // image:$('#profileimage').file,
+      }
+      console.log(localStorage.getItem("token"))
+      const csrftoken = getCookie('csrftoken');
+      console.log(csrftoken)
+      const headers = {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': csrftoken,
+                        'Authorization': localStorage.getItem('token')
+  
+                      }
+        
+    
+      axios
+      .put("/api/user/", formData,{
+        headers: headers
+      })
+      .then((res) => {
+    
+        console.log("Post successful!");
+        console.log("*-*-*-*-*-*-*-**///////////");
+
+        $('.success_edit_profile').show();
+
+        console.log(res.data,"******-**-*-*-*-*");
+        $('#bio_section').html(res.data.user_profile.bio);
+        $('#name-txt').html(res.data.user.name);
+
+        const image = res.data.user_profile.image
+        const profileimg = "/media/static/images/profileimage.png"
+        if (image !== null){
+            $('#profile_image').html('<img src= '+image+' />');
+        } else{
+            $('#profile_image').html('<img src= '+profileimg+' />');
+        }
+
+      })
+      .catch((error) => {
+          console.log(error)
+        console.log("Oops, request failed!")
+        console.log("ooooooooppppppppp")
+      }) 
+    
+      });
+
+
+
+    </script>       
+  {% endblock %}

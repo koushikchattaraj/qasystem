@@ -1,0 +1,726 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+{% block title %} {% endblock %}
+	        	<div class="main-content">
+	        		<nav aria-label="breadcrumb">
+						<ol class="breadcrumb bread_head mb-2">
+						    <li class="breadcrumb-item cstm-bread-item"><a class="bread-link" href="#">Trash</a></li>
+						</ol>
+					</nav>
+					<div class="d-sm-flex justify-content-between align-items-center trash_warn">
+						<p class="mb-sm-0 mb-2">Items in trash are deleted forever after 30 days</p>
+						<button class="empty-btn" data-toggle="modal" data-target="#delete-forever">Empty Trash <i class="fas fa-trash-alt"></i></button>
+					</div>
+		            <h6 class="folder-heading text-secondary ps-3 mb-3">Today</h6>
+		            <div class="row">
+		            	<div class="col-lg-2 col-md-3 col-sm-4 col-12 mb-2">
+		                    <div class="folders-sec">
+		                        <div class="folders border rounded">
+		                            <div class="file-icon text-secondary p-2 part-img">
+		                            	<a class="render_file" href="#">
+		                            		<i class="fas fa-folder folder_trash"></i>
+		                            	</a>
+		                            </div>
+		                            <div class="p-2 text-secondary d-flex align-items-center filename-div"><i class="fas fa-folder file-icon mr-2"></i><span class="file-txt text-center">Folder 1</span></div>
+		                        </div>
+		                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+			                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-trash-restore mr-3 add-new-icon"></i>Restore</a></li>
+			                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#delete-forever"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Delete forever</a></li>
+			                    </ul>
+		                    </div>
+		                </div>
+		            	<div class="col-lg-2 col-md-3 col-sm-4 col-12 mb-2">
+		                    <div class="folders-sec">
+		                        <div class="folders border rounded">
+		                            <div class="file-icon text-secondary p-2 part-img"><a class="render_file" href="#"><img src="{% static 'images/Screenshot from 2021-09-15 18-05-39.png' %}" class="img_preview" alt=""></a></div>
+		                            <div class="p-2 text-secondary d-flex align-items-center filename-div"><i class="fas fa-folder file-icon mr-2"></i><span class="file-txt text-center">Folder 1</span></div>
+		                        </div>
+		                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+			                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-trash-restore mr-3 add-new-icon"></i>Restore</a></li>
+			                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#delete-forever"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Delete forever</a></li>
+			                    </ul>
+		                    </div>
+		                </div>
+		            </div>
+		            <h6 class="folder-heading text-secondary ps-3 mt-5 mb-3">Earlier This Week</h6>
+		            <div class="row file_store">	
+		                <!-- This is for file fields -->
+		            </div>
+		        </div>
+		    </div>
+        </div>
+      </section>
+      
+      <div class="modal fade" id="new_folder" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">New Folder</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <input type="text" class="form-control" placeholder="Folder Name" name="" id="folder_name">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary" id="create_folder" data-dismiss="" >Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="delete-forever" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content py-0">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Delete Forever?</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>All items in the trash will be deleted forever and you won't be able to restore them</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+		        <button type="button" class="btn btn-danger" id="delete_folder">Delete Forever</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.menu_dots svg').click(function(){
+		$('.drive-sidebar').toggleClass('active');
+	})
+	$('.render_file').magnificPopup({
+		type: 'iframe'
+	});
+	$('.mfp-close').html("<i class='fas fa-arrow-left'>");
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			$(this).children('.right-dropdown').offset({top : posY});
+			$(this).children('.right-dropdown').offset({left : posX});
+			return false;
+		})
+		$('.folders-sec').mouseup(function (evt) {
+		  if (evt.which === 3) {
+		    if (evt.originalEvent.detail === 2) { 
+				$(this).children('.right-dropdown').offset({top: 0});
+		    }
+		  }
+		});
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+})
+if (token){
+
+}
+else{
+        window.location.replace('/sign_in');
+    }
+
+function getCookie(name) {
+			var cookieValue = null;
+			if (document.cookie && document.cookie != '') {
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = cookies[i].trim();
+					// Does this cookie string begin with the name we want?
+					if (cookie.substring(0, name.length + 1) == (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+
+
+	var data_id;
+
+
+   const abpath=window.location.pathname.split('/');
+    const folder_id=abpath[2];
+
+
+
+	axios.get(`/api/folder/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-2">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div  class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+						$('.right-dropdown').hide();
+						$('.folders-sec').removeClass('active');
+						$('.folders-sec').click(function(){
+							console.log("/************/////////////*************")
+							nextfolder_id = $(this).attr("data-id");
+							window.location.replace(`/newdrive/${nextfolder_id}`)
+						})
+
+					});
+						return folder_temp
+		});
+		$('.folder_sec').html(folder_temp)
+
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    console.log(posX , posY);
+			data_id = $(this).attr("data-id");
+			console.log(data_id)
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+
+
+$('#create_folder').click(function(){
+	console.log("------------")
+
+	const folderdetail = {
+	name:$('#folder_name').val(),
+  	folders:folder_id
+	}
+	console.log(folderdetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/folder/", folderdetail,{
+	headers: headers
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	axios.get(`/api/folder/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		$('#new_folder').modal('hide')
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-2">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div data-id=${item.id} class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+						$('.right-dropdown').hide();
+						$('.folders-sec').removeClass('active');
+						$('.folders-sec').click(function(){
+							console.log("/************/////////////*************")
+							nextfolder_id = $(this).attr("data-id");
+							
+							window.location.replace(`/newdrive/${nextfolder_id}`)
+						})
+						
+					});
+						return folder_temp
+		});
+
+		$('.folder_sec').html(folder_temp)
+		
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+
+
+	$('#rename_folder_btn').click(function(){
+	const folderdetail = {
+	id:data_id,
+	name:$('#rename_folder').val(),
+	}
+	console.log(folderdetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.put("/api/folder/", folderdetail,{
+	headers: headers
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	axios.get(`/api/folder/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		$('#new_folder').modal('hide')
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-2">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div data-id=${item.id} class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+						$('.right-dropdown').hide();
+						$('.folders-sec').removeClass('active');
+					});
+						return folder_temp
+		});
+		$('.folder_sec').html(folder_temp)
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+
+	axios.get(`/api/subfile/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		console.log(resp.data.data.document,"*-*-**-*-*-*-*-*-*-*-**-**-")
+		file_temp=''
+		resp.data.data.map(function(item){
+			console.log(item)
+			file_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+		                    <div class="folders-sec">
+		                        <div class="folders border rounded">
+		                            <div class="file-icon text-secondary p-2"><a class="render_file" href="${item.document}"><img src="{% static 'images/Screenshot from 2021-09-15 18-05-39.png' %}" alt=""></a></div>
+		                            <div class="p-2 text-secondary d-flex align-items-center filename-div"><i class="fas fa-file-${item.extension} ${item.extension}-icon file-icon mr-2"></i><span class="file-txt text-center">${item.name}</span></div>
+		                        </div>
+		                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+			                        <li>
+			                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+			                        </li>
+			                        <li>
+			                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+			                        </li>
+			                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+			                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+			                    </ul>
+		                    </div>
+		                </div>`
+						$(document).click(function(){
+						$('.right-dropdown').hide();
+						$('.folders-sec').removeClass('active');
+					});
+						return file_temp
+		});
+		$('.file_store').html(file_temp)
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+
+
+	
+
+	$('#file_upload').change(function(){
+		var formData = new FormData();
+        // var imagefile = document.querySelector('#profileimage');
+        formData.append('document', $('#file_upload')[0].files[0]);
+        formData.append('parent',folder_id);
+
+		console.log($('#file_upload')[0].files[0])
+	console.log("------On Change------")
+
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	console.log(localStorage.getItem('token'))
+
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+
+	axios
+	.post("/api/file/", formData,{
+	headers: headers
+	})
+	.then((resp) => {
+	console.log("Post successful!")
+	axios.get(`/api/subfile/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		console.log(resp.data.data.document,"*-*-**-*-*-*-*-*-*-*-**-**-")
+		file_temp=''
+		resp.data.data.map(function(item){
+			file_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+		                    <div class="folders-sec">
+		                        <div class="folders border rounded">
+		                            <div class="file-icon text-secondary p-2"><a class="render_file" href="${item.document}"><img src="{% static 'images/Screenshot from 2021-09-15 18-05-39.png' %}" alt=""></a></div>
+		                            <div class="p-2 text-secondary d-flex align-items-center filename-div"><i class="fas fa-file-${item.extension} ${item.extension}-icon file-icon mr-2"></i><span class="file-txt text-center">${item.name}</span></div>
+		                        </div>
+		                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+			                        <li>
+			                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+			                        </li>
+			                        <li>
+			                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+			                        </li>
+			                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+			                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+			                    </ul>
+		                    </div>
+		                </div>`
+						$(document).click(function(){
+						$('.right-dropdown').hide();
+						$('.folders-sec').removeClass('active');
+					});
+						return file_temp
+		});
+		$('.file_store').html(file_temp)
+
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+	});
+
+
+	$('#delete_folder').click(function(){
+		console.log("------------")
+
+	const folderdetail = {
+	id:folder_id
+	
+	}
+	console.log(folderdetail);
+	const csrftoken = getCookie('csrftoken');
+	console.log(csrftoken)
+	console.log(localStorage.getItem('token'))
+	const headers = {
+					'Content-Type': 'application/json',
+					'X-CSRFToken': csrftoken,
+					'Authorization': localStorage.getItem('token')
+					}
+console.log(headers)
+	axios
+	.delete("/api/subfolder/",{
+	headers: headers,
+	data: folderdetail
+	})
+	.then((res) => {
+	console.log("Post successful!")
+	axios.get(`/api/folder/${folder_id}`,{ 'headers': { 'Authorization': localStorage.getItem('token') } }).then(resp => {
+		$('#new_folder').modal('hide')
+		console.log(resp.data.data)
+		folder_temp=''
+		resp.data.data.map(function(item){
+			folder_temp += `<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2">
+								<div class="folders-sec" data-id=${item.id}>
+			                        <div class="folders drive-folder d-flex border rounded p-2">
+			                            <div class="folder-icon d-inherit text-secondary"><i class="fas fa-folder"></i></div>
+			                            <div data-id=${item.id} class="folder-txt d-flex align-items-center ml-3 text-secondary">${item.name}</div>
+			                        </div>
+			                        <ul class="dropdown-menu right-dropdown" aria-labelledby="navbarDropdown">
+				                        <li>
+				                        	<a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#rename_modal"><i class="fas fa-pencil-alt mr-3 add-new-icon"></i>Rename</a>
+				                        </li>
+				                        <li>
+				                        	<a class="dropdown-item starred-link right-drop-link" href="#"><i class="fas fa-star mr-3 add-new-icon"></i>Add to Starred</a>
+				                        </li>
+				                        <li><a class="dropdown-item right-drop-link" href="#"><i class="fas fa-download mr-3 add-new-icon"></i>Download</a></li>
+				                        <li><a class="dropdown-item right-drop-link" href="#" data-toggle="modal" data-target="#remove_modal"><i class="fas fa-trash-alt mr-3 add-new-icon"></i>Remove</a></li>
+				                    </ul>
+			                    </div>
+			                </div>
+		                </div>`
+						$(document).click(function(){
+							$('.right-dropdown').hide();
+							$('.folders-sec').removeClass('active');
+							
+							
+						});
+						$(document).ready(function(){
+							$('.folders-sec').click(function(){
+								console.log("/************/////////////*************")
+								nextfolder_id = $(this).attr("data-id");
+								
+								window.location.replace(`/newdrive/${nextfolder_id}`)
+							})
+						})
+						return folder_temp
+		});
+
+		$('.folder_sec').html(folder_temp)
+		
+		$('.folders-sec').bind("contextmenu",function(e){
+			$('.right-dropdown').hide();
+			$('.right-dropdown').removeClass('active');
+			$('.folders-sec').removeClass('active');
+			$(this).addClass('active');
+			var e = window.event;
+		    var posX = e.clientX;
+		    var posY = e.clientY;
+
+		    // console.log(posX , posY);
+			$(this).children('.right-dropdown').show(300);
+			$(this).children('.right-dropdown').addClass('active');
+			return false;
+		})
+		$(document).click(function(){
+			$('.right-dropdown').hide();
+			$('.folders-sec').removeClass('active');
+		});
+		$(document).contextmenu(function() {
+		    return false;
+		});
+		$('.right-dropdown').contextmenu(function() {
+		    return false;
+		});
+		$('.starred-link').click(function() {
+			var parent_star = $(this).parent().parent();
+			if($(parent_star).hasClass('active'))
+			{
+				$(this).toggleClass('star');
+			}
+		});
+
+	});
+	})
+	.catch(() => {
+	console.log("Oops, request failed!")
+	}) 
+
+
+	});
+
+
+
+
+</script>
+{% endblock %}
