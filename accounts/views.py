@@ -164,12 +164,10 @@ class UserView(APIView):
 
 	def get(self, request):
 		context = {}
-		print(request.user.id,"//////****///////")
 		user = User.objects.filter(id=request.user.id)
 		user_profile = UserProfile.objects.filter(user=request.user.id)
 		user_serilizer = UserSerilizers(user, many=True)
 		userprofile_serilizer = UserProfileSerilizer(user_profile, many=True)
-		print(userprofile_serilizer.data)
 		question = Question.objects.filter(user=request.user.id).count()
 		answer = Answer.objects.filter(user=request.user.id).count()
 		context['status'] = status.HTTP_200_OK
@@ -179,8 +177,6 @@ class UserView(APIView):
 		context = {}
 		user_profile = UserProfile.objects.get(user=request.user.id)
 		user_data = User.objects.get(id=request.user.id)
-		print(user_profile,"**********")
-		print(request.data,"**********")
 
 		userprofile_serilizer = UserProfileSerilizer(user_profile, data=request.data, partial=True)
 		user_serilizer = UserSerilizers(user_data, data=request.data, partial=True)
@@ -202,8 +198,6 @@ class AccountVerification(APIView):
 	permission_classes = (AllowAny,)
 	authentication_classes = (JSONWebTokenAuthentication,)
 	def get(self, request, *args, **kwargs):
-		print(kwargs['user'],"-------------")
-		print(kwargs['token'])
 		try:
 			user = User.objects.get(id=kwargs['user'])
 			user_profile = UserProfile.objects.get(user=user,token=kwargs['token'])
@@ -224,5 +218,4 @@ class AccountVerification(APIView):
 		except Exception as e:
 			print(e)
 
-		print(user,user_profile,)
 		return HttpResponse("Html")

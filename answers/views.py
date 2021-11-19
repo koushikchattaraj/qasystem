@@ -28,8 +28,6 @@ class AnswerView(APIView):
     def post(self, request):
         if request.user.is_authenticated:
             request.data.update({"user":request.user.id})
-            print(request.user.id,"***************")
-        print(request.data,"---------------")
         answer_serilizers = AnswerPostSerilizers(data=request.data)
         if answer_serilizers.is_valid():
             answer_serilizers.save()

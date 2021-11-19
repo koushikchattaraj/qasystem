@@ -218,7 +218,6 @@ class FolderByIdApi(APIView):
         context = {}
         filter_folder = Folder.objects.get(pk=pk)
         filter_folder = Folder.objects.filter(folders=pk, user=request.user.id, is_deleted=False)
-        print(filter_folder)
         folder_serilizer = FolderSerilizers(filter_folder, many=True)
         context['data'] = folder_serilizer.data
         context['message'] = "Your Folder are"
@@ -331,7 +330,6 @@ class FullFolderUpload(APIView):
     def post(self, request):
         context = {}
         files = request.FILES.getlist("document")
-        print(dir(files), "======================")
 
         for x in files:
             

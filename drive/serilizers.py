@@ -25,7 +25,6 @@ class FolderSerilizers(serializers.ModelSerializer):
         parents = validated_data.get('parents')
         folder = Folder(name=name, user=userobj, parents = parents)
         folder.save()
-        print("*******************",folders,folderobj)
         folder.folders.add(folderobj)
         return folder
 
