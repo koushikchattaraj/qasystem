@@ -1,2 +1,5 @@
 file.txt
 .env
+db.sqlite3
+qasystem/__pycache__/settings.cpython-38.pyc
+qasystem/settings.py
