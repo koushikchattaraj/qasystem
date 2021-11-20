@@ -137,7 +137,7 @@ class UserCreateView(APIView):
 				if userprofile_serilizer.is_valid():
 					userprofile_serilizer.save()
 					subject = 'Account Verification'
-					message = f'Hi {user.name}, Click Here to Verify your account : http://192.168.1.9:8000/account_verification/{user.id}/{token}.'
+					message = f'Hi {user.name}, Click Here to Verify your account : https://qasystemdrive.herokuapp.com/account_verification/{user.id}/{token}.'
 					email_from = settings.EMAIL_HOST_USER
 					recipient_list = [email, ]
 					send_mail( subject, message, email_from, recipient_list )
