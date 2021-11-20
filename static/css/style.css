@@ -80,7 +80,10 @@ p {
 
 
 /* ----------------------------------------------------------------------------- */
-
+.qa-logo {
+    height: 10px;
+    width: 50px;
+}
 .inter-botm-details {
     border: 1px solid #9fa6ad;
     padding: 6px 12px;
@@ -2206,7 +2209,9 @@ span.author-name
         background-size: 100%;
     }
 }
+
 @media (max-width: 425px) {
+
     .cus-fa {
         font-weight: 900;
         color: var(--color-light-white);

@@ -28,7 +28,7 @@
         <div class="container-fluid">
           
           <a class="navbar-brand cus-brand" href="{% url 'accounts:home' %}">LOGO</a>
-          <button class="navbar-toggler cus-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon cus-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,12 +36,14 @@
                   <li class="nav-item custm-nav mr-2">
                       <a class="nav-link custm-nav-link" href="{% url 'accounts:home' %}">Home</a>
                   </li>
+                  <li class="nav-item custm-nav mr-2">
+                    <a class="nav-link custm-nav-link" href="{% url 'accounts:account' %}" id="account_url">Accounts</a>
+                </li>
                   <li class="nav-item dropdown custom-dropdown mr-2">
                       <a class="nav-link dropdown-toggle custm-nav-link custm-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions <i class="fas fa-chevron-down ms-2"></i></a>
                       <ul class="dropdown-menu cstm-nav-dropdown" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Knowledge</a></li>
-                          <li><a class="dropdown-item" href="#">Data Manager</a></li>
-                          <li><a class="dropdown-item" href="#">Financing</a></li>
+                          <li><a class="dropdown-item" href="{% url 'drive:newdrive' %}">Data Manager</a></li>
+                          <li><a class="dropdown-item" href="{% url 'question:all-question' %}">Questions</a></li>
                           <li><a class="dropdown-item" href="#">Hire Someone</a></li>
                       </ul>
                   </li>
@@ -55,7 +57,8 @@
                 <li  class="nav-item">
                   <div class="nav-btn d-flex">
                     <a href="{% url 'accounts:sign_in' %}">
-                    <button type="button" class="btn cutom-primary ms-4 mr-2" id="login_btn">Login</button>
+                    <button type="button" class="btn secondary-btn mr-2" id="login_btn" style="
+                    background: blanchedalmond">Login</button>
                     </a>
                     <a href="{% url 'accounts:sign_up' %}">
                       <button type="button" class="btn secondary-btn" id="sign_up_btn">Sign Up</button>
